@@ -1,4 +1,4 @@
-package notations;
+package tests.notations;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

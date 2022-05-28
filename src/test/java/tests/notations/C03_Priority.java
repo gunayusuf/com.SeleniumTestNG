@@ -1,4 +1,4 @@
-package notations;
+package tests.notations;
 
 import org.testng.annotations.Test;
 import utilities.TestBase;

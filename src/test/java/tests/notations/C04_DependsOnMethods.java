@@ -1,4 +1,4 @@
-package notations;
+package tests.notations;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
