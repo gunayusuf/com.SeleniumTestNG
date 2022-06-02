@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirli gruplari calistirma">
+    <!--
+    xml dosyalar calistiracagimiz suite,
+    test veya diger secenekleri bir goreve gore gruplandirma icin de kullanilabilir
+
+    Bu durumda calisacak tum test method'larini veya class'lari
+     tek tek xml dosyasina tanimlamak yerine
+     framework'umuze istedigimiz test method'larini
+     istedigimiz gruplara dahil edebiliriz
+
+     bunu yapabilmek icin once test methodlarimizi istedigimiz gruplara dahil eder
+     sonra xml dosyasinda
+        1- hangi gruplar calisacak/calismayacak (include,exclude)
+        2- bu gruplar hangi package altinda aranacak
+    -->
+    <test name="belirli gruplar">
+        <groups>
+            <run>
+                <include name="grup1"></include>
+                <exclude name="grup2"></exclude>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.notations.C01_BeforeMethod_AfterMethod"></package>
+            <package name="tests.notations.C06_SoftAssert"></package>
+        </packages>
+    </test>
+</suite>

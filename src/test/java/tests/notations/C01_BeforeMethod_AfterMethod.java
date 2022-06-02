@@ -11,7 +11,7 @@ public class C01_BeforeMethod_AfterMethod extends TestBase {
     // Buradaki tek fark natural order yani alfabetik siraya gore calisti
     // once techproedTesti sonra test01 ve son olarak test02 calisti.
 
-    @Test
+    @Test(groups = "grup2")
     public void test01() {
     driver.get("https://www.amazon.com.tr/");
 
@@ -19,14 +19,14 @@ public class C01_BeforeMethod_AfterMethod extends TestBase {
 
 
 
-    @Test
+    @Test(groups = "grup2")
     public void test02() {
         driver.get("https://www.bestbuy.com/");
 
     }
 
 
-    @Test
+    @Test(groups = "grup1")
     public void techproedTesti() {
         driver.get("https://www.techproeducation.com/");
 

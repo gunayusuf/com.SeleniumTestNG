@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 import utilities.TestBase;
 
 public class C06_SoftAssert extends TestBase {
-    @Test
+    @Test(groups = "grup1")
     public void test01() {
 
         /*
